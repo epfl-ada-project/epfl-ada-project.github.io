@@ -20,6 +20,21 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+  <style type="text/css">
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgba(0, 0, 0, 0.5);
+}
+  </style>
 
 </head>
 
@@ -85,7 +100,7 @@ The dataset we are going to use is extracted from an official <a href="https://w
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Introduction</h4>
-            <p class="text-black-50 mb-0">The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. This increase demand and the preference for private transport are at the root of many problems, among which road accidents. 
+            <p class="text-black-50 mb-0 text-justify">The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. This increase demand and the preference for private transport are at the root of many problems, among which road accidents. 
 
 Mme X and Mr Y are living in France and are both afraid of being injured while driving. They think that it's unavoidable to have at least one accident in their life. We offer to help them by using Data Science. Is there a way to minimize the injuries they may got? What are the elements that augment the number of accidents or increase their severity ? For this purpose we will analyse the french national traffic injuries. 
 The dataset used includes all the traffic accidents in France for the past 10 years with details about the passengers, the location or the type of vehicle.
@@ -99,8 +114,9 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
 
 
         <div class="col-lg-12">
-          <p>
-            Before helping Mme X and Mr Y we will start by looking at the latest trends in France. Those can provide useful insights about how the number of accident have evolved and why.
+          <h3>2018 has been the safest year, in the past ten years.</h2>
+          <p class="text-justify">
+            Before helping Mrs X and Mr Y, we will start by looking at the latest trends in France. Those can provide useful insights about how the number of accidents have evolved through time.
           </p>
                   <div class="row">
             <div class="col-lg-6">
@@ -113,24 +129,25 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
               </div>
             </div>
         </div>
-          <p>
-            Even if the number of accidents on the French road has remained almost constant between 2013 and 2017, since 2008 it has decreased by 25%. 2018 has been the safest year with only 57,783 accidents. We can also dig deeper and take into account the different months. Indeed the number of accidents vary and depends of the period of the year. 
-            On the following plot we can observe that some months like october, june or july have a high number of accidents while the month of august and september are safer in average. 
+          <p class="text-justify">
+            Even if the number of accidents on the French roads has remained almost constant between 2013 and 2017, since 2008 it has decreased by 25%. 2018 has been the safest year with only 57,783 accidents. We can also dig deeper and take into account the different months. Indeed the number of accidents vary and depends of the period of the year. 
+On the following plot we can observe that some months like October, June or July have a high number of accidents while August and September are safer on average. 
+
 
           </p>
-          <p>
-            Some results were unexpected. In February for example, with the winter, we could have expected more accidents. In August because of the holiday break and the departures, we could have expected more accidents. 
+          <p class="text-justify">
+            Some results were unexpected. In February for example, with the winter, we could have expected more accidents. In August, because of the holiday break and the departures, we could have expected more accidents. 
           </p>
-          <p>
-            But the number of accident itself is not enough to describe the trends. The gravity is another useful indicator that needs to be taken into account.
+          <p class="text-justify">
+            But the number of accident itself is not enough to describe the trends. The gravity is another useful indicator that needs to be taken into account. It is measured as being the level of injury per passenger caused by the accident.
           </p>
           <!-- <Plot of gravity of accidents><Separer les differentes gravite a cause des echelles plus de visibilite des tendances> -->
-          <p>
-            As we can observe on the above plots two different trends can be identified. The first one from 2008 to 2013 leads to a sudden drop of in each category. This is due to the decrease of accidents on the same period. The second trend since 2014 shows an increase of unscathed people which is a good point, but the number of injured and slightly injured people went up too. This graphics are influenced by the number of accident, but also by the number of persons involved in the accidents.
+          <p class="text-justify">
+            As we can observe on the above plots, two different trends can be identified. The first one from 2008 to 2013 leads to a sudden drop of in each category. This is due to the decrease of accidents on the same period. The second trend since 2014 shows an increase of unscathed people which is a good point, but the number of injured and slightly injured people went up too. These graphs are influenced by the number of accident, but also by the number of persons involved in accidents.
           </p>
           <!-- plot number of persons per accidents> -->
-          <p>
-            As the upper graphics shows, most of the accidents involve less than 4 persons. Indeed, most of the time people take the car alone, such as to get to work. As a result, accidents involve few people in average and most of the time only one vehicle. 
+          <p class="text-justify">
+            As the upper graph shows, most of the accidents involve less than 4 people. Indeed, most of the time people take the car alone, such as to get to work. As a result, accidents involve few people in average and most of the time, only one vehicle.  
           </p>
         </div>
       </div>
@@ -145,7 +162,7 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">1. Be the right person</h4>
-                <p class="mb-0 text-white-50">In this part we will determine if the gender and the age of a person has an impact on the road accidents and on their gravities.</p>
+                <p class="mb-0 text-white-50">In this part, we were curious to know if gender and age have an impact on the road accidents and on their gravities. In our dataset, we could not differentiate between the passengers and the drivers, but still we could get an indication of the consequences of accidents on people.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -153,18 +170,28 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
         </div>
           <div class="row mt-5">
             <div class="col-lg-12">
+
+              <h2>
+                62% of women are injured in car accidents.
+              </h2>
               
-              <p>Men and women are not equal on the road and don’t face the same risks. Over the past ten years, 88,218 men were involved in accidents for only 41,951 women. This numbers includes all conductors and passengers. Moreover 3,05% of this men died for only 1.89% of the women. This can be linked to the fact that women drive safer and are less reckless behind the wheel. 
+              <p class="text-justify">Over the past ten years we recorded 88,218 men involved in accidents for only 41,951 women. This numbers includes both conductors and passengers. Moreover 3,05% of this men died for only 1.89% of the women. Men and women are not equal on the road and don’t face the same risks. This can be linked to the fact that women drive safer and are less reckless behind the wheel. 
               </p>
               <div class="embed-responsive embed-responsive-16by9">
               <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~kungfupandas/9.embed?showlink=false"></iframe>
               </div>
 
-              <p>The age of a person influences both the probability to be in an accident and to die within. For the men, both probabilities decrease with age. For the women the number of death increase after 50 years.
+              <p class="text-justify">The age of a person influences both the probability to be in an accident and to die within. For the men, both probabilities decrease with age. The men and women pyramid shows that the 20-30 years old are the people that are the most prone to be involved in accidents and to die in an accident. For the women the number of death increase after 50 years, which can be due to the vulnerability of people at this age.
               </p>
               <!-- <Montrer taux de décès par tranche d’âge> -->
-              <p>If Ms X drives safely like most of the women, she can be comfort that she has less risks than the average drivers. 
+              <p class="text-justify">On another hand, looking at the risks of injuries, we notice that even though there are more men exposed to accidents than women, there are less women that end up completely safe compared to men, and there are more risks of injuries as a woman than as a man (62% of chance to be injured as a woman versus 53% as a man).
               </p> 
+
+              <!-- camenbert -->
+
+              <p class="text-justify">
+                If Mrs X drives safely like most of the women, she can be comforted that she has less risks of dying than the average drivers. In this case, Mrs X should probably be the pilot here, ladies first ! 
+              </p>
               
             </div>
           </div>
@@ -180,26 +207,27 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">2. At the right place</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae accusamus, magnam quibusdam libero. Obcaecati saepe hic veritatis at eaque sint cupiditate, cum nobis consequuntur et a odit! Asperiores, praesentium, debitis.</p>
+                <p class="mb-0 text-white-50">In this section, we would like to know how the number of accidents are distributed around France. Are there any specific regions where accidents are concentrated ?</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
         </div>
         <div class="row mt-5">
+          <div class="col-lg-12"><h2>5591 injuries in Paris, in 2018.</h2></div>
           <div class="col-lg-6"><object type="image/svg+xml" data="img/map_france.svg">
               </object></div>
             <div class="col-lg-6">
-              <p>
+              <p class="text-justify">
                 All accidents are not spread uniformly across the country. Some regions and specific areas have more accidents than others. On the following map, we can observe that the departments with the highest number of accidents are located where big cities are such as Paris and  Marseille. In the middle of the France, where the density of population is lower, fewer accidents happened.
               </p>
             </div>
           </div>
         <div class="row">
           <div class="col-lg-12">
-              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam possimus velit aliquam enim esse veritatis et molestiae aperiam perspiciatis, adipisci cumque nobis mollitia. Asperiores cum illo, nostrum. Quas, debitis, natus.</div>
-              <div>A hic obcaecati facere. Rem inventore optio, consequatur aperiam, enim culpa, distinctio cumque laudantium facilis laboriosam, explicabo eveniet expedita officiis vero? Neque, assumenda saepe! Quos eligendi provident cupiditate consequatur pariatur.</div>
-              <div>Officiis nobis ab officia qui natus fugit, beatae possimus incidunt vel, ex voluptas. Molestias temporibus, voluptas at natus ad ratione amet nisi quod expedita odio fugit. Dolor magnam quos dolore.</div>
+              <p class="text-justify">
+                Mr Y and Mrs X would better avoid visiting the big cities of France. 
+              </p>
           </div>
         </div>
       </div>
@@ -214,7 +242,7 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">3. At the right moment</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae accusamus, magnam quibusdam libero. Obcaecati saepe hic veritatis at eaque sint cupiditate, cum nobis consequuntur et a odit! Asperiores, praesentium, debitis.</p>
+                <p class="mb-0 text-white-50">Below, we aim to analyze the environment of the accidents, to see if some weather conditions could trigger or affect the gravity of an accident.</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -222,12 +250,64 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
         </div>
         <div class="row mt-5">
           <div class="col-lg-12">
-           <p>
-             We showed previously that the number of accident varies during the year. This may be due to the weather also impacts the road conditions. We showed that while driving the worst conditions are fog, strong winds and dazzling weather. The weather condition with the least percentage of death is during light rainfall. People
+            <h2>
+              12% of people involved in accidents are killed in a stormy or foggy weather.
+            </h2>
+           <p class="text-justify">
+             We showed previously that the number of accident varies during the year. This may be due to the weather that also impacts the road conditions. We showed that while driving, the worst conditions are fog, strong winds and dazzling weather, when the visibility on the road is the less. The weather condition with the least percentage of death per accident is during light rainfall. Even with heavy rainfall, this percentage is just above normal conditions. In these conditions, people tend to be more careful.
            </p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-8 m-lg-auto">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.001.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.002.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.003.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.004.png" alt="Fouth slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.005.png" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.006.png" alt="Sixth slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/caroussel/caroussel.007.png" alt="Seventh slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+            
+          </div> 
+        </div>
+                      <p class="text-justify text-center">          Mr Y and Mrs X can drive safely regardless of the weather, unless if they are unlucky enough to face a storm. </p>
       </div>
+
 
       <!-- Project Four Row -->
       <div class="row justify-content-center no-gutters mt-5">
@@ -239,7 +319,7 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">4. Security</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae accusamus, magnam quibusdam libero. Obcaecati saepe hic veritatis at eaque sint cupiditate, cum nobis consequuntur et a odit! Asperiores, praesentium, debitis.</p>
+                <p class="mb-0 text-white-50">The first thing to be looked at are the vehicle involved in the accidents. Indeed many parameters depends on it such as the speed before impact and the average injuries of the passengers.</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -247,8 +327,10 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
         </div>
         <div class="row mt-5">
           <div class="col-lg-12">
-            <p>
-              The first thing to be looked at are the vehicle involved in the accidents. Indeed many parameters depends on it such as the speed before impact and the average injuries of the passengers. Besides the security equipments are also different in a car or on a bike and don’t protect the same way.
+            <h2>18,7% of killed people in accidents were not wearing a seatbelt.</h2>
+            <p class="text-justify"> Besides the security equipments are also different in a car or on a bike and do not protect the same way. Since we already know the security equipments prevent disasters, in this section we want to get an idea of how important they are, quantitatively.</p>
+            <p class="text-justify">
+              We can also observe different rates of injuries depending on the seat in a car. It is obvious that most collisions in car crashes are frontal. Thus the front seats are most vulnerable.
             </p>
           </div>
         </div>
@@ -257,18 +339,22 @@ The dataset used includes all the traffic accidents in France for the past 10 ye
             <img class="img-fluid" src="img/car_accident_stat.jpeg">
           </div>
           <div class="col-lg-6">
-            <p>
-                We can also observe different rates of injuries depending on the seat in a car. It is obvious that most collisions in car crashes are frontal. Thus the front seats are most vulnerable.
+            <p class="text-justify">
+                It can be easily shown that the use of security equipment strongly reduce the severity of any injuries. We notice that the seatbelt clearly diminish the number of killed people in accidents, and divides the probability of dying by ten.
             </p>
+            <p class="text-justify">Mr X and Mrs Y, wear your seatbelts !</p>
             <!-- <Plot voiture avec les places et taux de deces> -->
-            <p>
-              It can be easily shown that the use of security equipment strongly reduce the severity of any injuries. We will analyse several examples like wearing a seatbelt or a helmet.
-            </p>
             <img class="img-fluid" src="img/car_top.png">
           </div>
         </div>
       </div>
+          <div class="row mt-5">
+      <div class="col-lg-12">                  <p class="text-justify">
+              Using our data analysis, we can draw the perfect portail and setting for Mr Y and Mrs X in order for them to drive safely across France. Mr Y is between 20 and 50, and Mrs X is between 30 and 50. Mrs X is driving, and Mr Y is sitting in the back seat, both wearing their seatbelts. They are cruising in the middle of France in the middle of nowhere, avoiding any big city. It is a little bit cloudy and it might rain lightly. In this case, being the best case scenario, we can affirm that they still have 1% of chance of dying in an accident.  
+            </p></div>
     </div>
+    </div>
+
   </section>
 
   <!-- Footer -->
