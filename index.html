@@ -34,6 +34,15 @@
   font-size: 55px;
   color: rgba(0, 0, 0, 0.5);
 }
+blockquote p:before { 
+    content: open-quote;
+    font-weight: bold;
+} 
+blockquote p:after { 
+    content: close-quote;
+    font-weight: bold;
+}
+
   </style>
 
 </head>
@@ -189,10 +198,11 @@ On the following plot we can observe that some months like October, June or July
               </p> 
 
               <!-- camenbert -->
-
-              <p class="text-justify">
-                If Mrs X drives safely like most of the women, she can be comforted that she has less risks of dying than the average drivers. In this case, Mrs X should probably be the pilot here, ladies first ! 
+              <blockquote>
+              <p class="text-justify font-italic text-center" style="color: gray">
+                If Mrs X drives safely like most of the women, she can be comforted that she has less risks of dying than the average drivers. In this case, Mrs X should probably be the pilot here, ladies first !
               </p>
+              </blockquote>
               
             </div>
           </div>
@@ -226,9 +236,11 @@ On the following plot we can observe that some months like October, June or July
           </div>
         <div class="row">
           <div class="col-lg-12">
-              <p class="text-justify">
+            <blockquote>
+              <p class="text-justify font-italic text-center" style="color: gray">
                 Mr Y and Mrs X would better avoid visiting the big cities of France. 
               </p>
+              </blockquote>
           </div>
         </div>
       </div>
@@ -303,12 +315,12 @@ On the following plot we can observe that some months like October, June or July
                     <span class="sr-only">Next</span>
                   </a>
             </div>
-
+          <p class="text-center" style="color: gray; text-decoration: underline;">Death rate according to weather condition</p>
             
           </div> 
-          <p class="mx-auto" style="color: gray; text-decoration: underline;">Death rate according to weather condition</p>
-        </div>
-                      <p class="text-justify text-center">          Mr Y and Mrs X can drive safely regardless of the weather, unless if they are unlucky enough to face a storm. </p>
+
+        </div><blockquote>
+                      <p class="text-justify font-italic text-center" style="color: gray">          Mr Y and Mrs X can drive safely regardless of the weather, unless if they are unlucky enough to face a storm. </p></blockquote>
       </div>
 
 
@@ -345,7 +357,11 @@ On the following plot we can observe that some months like October, June or July
             <p class="text-justify">
                 It can be easily shown that the use of security equipment strongly reduce the severity of any injuries. We notice that the seatbelt clearly diminish the number of killed people in accidents, and divides the probability of dying by ten.
             </p>
-            <p class="text-justify">Mr X and Mrs Y, wear your seatbelts !</p>
+            <blockquote>
+            <p class="text-justify font-italic text-center" style="color: gray">
+            Mr X and Mrs Y, wear your seatbelts !
+          </p>
+        </blockquote>
             <!-- <Plot voiture avec les places et taux de deces> -->
             <img class="img-fluid" src="img/car_top.png">
           </div>
