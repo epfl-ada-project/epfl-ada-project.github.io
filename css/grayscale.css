@@ -1,4 +1,4 @@
-/*!
+x/*!
  * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
@@ -295,3 +295,5 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+.conclusion-section{padding-top:10rem;background:linear-gradient(to top,#161616 0,rgba(22,22,22,.9) 75%,rgba(22,22,22,.8) 100%)}.conclusion-section p{margin-bottom:5rem}
