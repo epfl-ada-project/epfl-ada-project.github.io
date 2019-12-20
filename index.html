@@ -87,8 +87,9 @@ blockquote p:after {
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <h2 class="text-white mb-4">About the project</h2>
-          <p class="text-white-50">The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. However, this increase demand and the preference for private transport are at the root of many problems, among which road accidents. In fact, the number of accidents has continued to increase, with disastrous consequences. 
-With this project, we aim to analyze the causes and effects of this phenomenon. We would like to investigate the correlation between the gravity level of a road accident and the components of the traffic system composed of the road, the driver and the vehicule. These components can be described by variables illustrating the drivers behavior, the attributes of the vehicle operated, the quality of the road and the climatic conditions. <br/>
+          <p class="text-white-50">The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. This increasing demand and the preference for private transport are at the root of many problems, among which road accidents. In fact, the number of accidents has continued to increase, with disastrous consequences.
+With our story, we aim to analyze the causes and effects of this phenomenon. We would like to investigate the correlation between the gravity level of a road accident and the components of the traffic system composed of the road, the driver and the vehicule. These components can be described by variables illustrating the drivers behavior, the attributes of the vehicle operated, the quality of the road and the climatic conditions.
+<br/>
 The dataset we are going to use is extracted from an official <a href="https://www.data.gouv.fr/fr/">French open source database platform</a>. The dataset is provided by the <a href="https://www.onisr.securite-routiere.interieur.gouv.fr/en">French road safety observatory (ONISR)</a> and is composed of more than 474,000 accidents from 2005 to 2018. It can be found <a href="https://www.data.gouv.fr/en/datasets/base-de-donnees-accidents-corporels-de-la-circulation/">here</a>.
 </p>
         </div>
@@ -109,10 +110,7 @@ The dataset we are going to use is extracted from an official <a href="https://w
         <div class="col-xl-6 col-lg-6">
           <div class="featured-text text-center text-lg-left">
             <h4>Introduction</h4>
-            <p class="text-black-50 mb-0 text-justify">The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. This increasing demand and the preference for private transport are at the root of many problems, among which road accidents. In fact, the number of accidents has continued to increase, with disastrous consequences.
-With our story, we aim to analyze the causes and effects of this phenomenon. We would like to investigate the correlation between the gravity level of a road accident and the components of the traffic system composed of the road, the driver and the vehicule. These components can be described by variables illustrating the drivers behavior, the attributes of the vehicle operated, the quality of the road and the climatic conditions. 
-Mrs X and Mr Y are visiting France and are both afraid of being injured while driving. They think that it's unavoidable to have at least one accident in their life. We offer to help them by using Data Science. Is there a way to minimize their chance to die? What are the elements that increase the number of deadly accidents or their severity ? For this purpose we will analyse the french national traffic injuries. 
-The dataset used includes all the traffic accidents in France over the last 10 years with details about passengers, locations and vehicle types.
+            <p class="text-black-50 mb-0 text-justify">Mrs Alice and Mr Bob are visiting France and are both afraid of being injured while driving. They think that it's unavoidable to have at least one accident in their life but want to minimize theire chance to die. We offer to help them by looking at previous years accidents informations that we extracted from a dataset containing all the traffic accidents in France over the last 10 years. In order to do so, we will try to answer the following questions : Is there a way to minimize their chance to die? What are the elements that increase the number of deadly accidents or their severity ? What is the impact of security equipments in accidents death rates ?
 
 </p>
 
@@ -126,7 +124,7 @@ The dataset used includes all the traffic accidents in France over the last 10 y
         <div class="col-lg-12">
           <h3>2018 has been the safest year, in the past ten years.</h2>
           <p class="text-justify">
-            Before helping Mrs X and Mr Y, we will start by looking at the latest trends in France. Those can provide useful insights about how the number of accidents have evolved through time.
+            Before helping Mrs Alice and Mr Bob, we will start by looking at the latest trends in France. Those can provide useful insights about how the number of accidents have evolved through time.
           </p>
                   <div class="row">
             <div class="col-lg-6">
@@ -157,7 +155,8 @@ On the following plot we can observe that some months like October, June or July
           </p>
           <!-- plot number of persons per accidents> -->
           <p class="text-justify">
-            As the upper graph shows, most of the accidents involve less than 4 people. Indeed, most of the time people take the car alone, such as to get to work. As a result, accidents involve few people in average and most of the time, only one vehicle.  
+As the upper graph shows, most of the accidents involve less than 4 people. Indeed, most of the time people take the car alone, such as to get to work. As a result, accidents involve few people in average and most of the time, only one vehicle. 
+
           </p>
         </div>
       </div>
@@ -197,10 +196,12 @@ On the following plot we can observe that some months like October, June or July
               <p class="text-justify">On another hand, looking at the risks of injuries, we notice that even though there are more men exposed to accidents than women, there are less women that end up completely safe compared to men, and there are more risks of injuries as a woman than as a man (62% of chance to be injured as a woman versus 53% as a man).
               </p> 
 
-              <!-- camenbert -->
+              <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~kungfupandas/11.embed?showlink=false"></iframe>
+              </div>
               <blockquote>
               <p class="text-justify font-italic text-center" style="color: gray">
-                If Mrs X drives safely like most of the women, she can be comforted that she has less risks of dying than the average drivers. In this case, Mrs X should probably be the pilot here, ladies first !
+                If Mrs Alice drives safely like most of the women, she can be comforted that she has less risks of dying than the average drivers. In this case, Mrs Alice should probably be the pilot here, ladies first ! 
               </p>
               </blockquote>
               
@@ -238,7 +239,7 @@ On the following plot we can observe that some months like October, June or July
           <div class="col-lg-12">
             <blockquote>
               <p class="text-justify font-italic text-center" style="color: gray">
-                Mr Y and Mrs X would better avoid visiting the big cities of France. 
+                Mr Bob and Mrs Alice would better avoid visiting the big cities of France. 
               </p>
               </blockquote>
           </div>
@@ -320,7 +321,7 @@ On the following plot we can observe that some months like October, June or July
           </div> 
 
         </div><blockquote>
-                      <p class="text-justify font-italic text-center" style="color: gray">          Mr Y and Mrs X can drive safely regardless of the weather, unless if they are unlucky enough to face a storm. </p></blockquote>
+                      <p class="text-justify font-italic text-center" style="color: gray">Mr Bob and Mrs Alice can drive safely regardless of the weather, unless if they are unlucky enough to face a storm.   </p></blockquote>
       </div>
 
 
@@ -345,7 +346,7 @@ On the following plot we can observe that some months like October, June or July
             <h2>18,7% of killed people in accidents were not wearing a seatbelt.</h2>
             <p class="text-justify"> Besides the security equipments are also different in a car or on a bike and do not protect the same way. Since we already know the security equipments prevent disasters, in this section we want to get an idea of how important they are, quantitatively.</p>
             <p class="text-justify">
-              We can also observe different rates of injuries depending on the seat in a car. It is obvious that most collisions in car crashes are frontal. Thus the front seats are most vulnerable.
+              We can also observe different rates of injuries depending on the seat in a car. It is obvious that most collisions in car crashes are frontal. But because of the fact that the middle rear seat often do not have airbags and is exposed to the front window, it is the most deadly place.
             </p>
           </div>
         </div>
@@ -355,11 +356,11 @@ On the following plot we can observe that some months like October, June or July
           </div>
           <div class="col-lg-6">
             <p class="text-justify">
-                It can be easily shown that the use of security equipment strongly reduce the severity of any injuries. We notice that the seatbelt clearly diminish the number of killed people in accidents, and divides the probability of dying by ten.
+                It can be easily shown that the use of security equipment strongly reduce the severity of any injuries. We notice that the seatbelt clearly reduce the number of killed people in accidents, and divides the probability of dying by ten.
             </p>
             <blockquote>
             <p class="text-justify font-italic text-center" style="color: gray">
-            Mr X and Mrs Y, wear your seatbelts !
+            Mr Bob and Mrs Alice, wear your seatbelts !
           </p>
         </blockquote>
             <!-- <Plot voiture avec les places et taux de deces> -->
@@ -376,7 +377,8 @@ On the following plot we can observe that some months like October, June or July
         <div class="col-lg-10 mx-auto">
           <h2 class="text-white m-5">Conclusions</h2>
           <p class="text-white">
-              Using our data analysis, we can draw the perfect portail and setting for Mr Y and Mrs X in order for them to drive safely across France. Mr Y is between 20 and 50, and Mrs X is between 30 and 50. Mrs X is driving, and Mr Y is sitting in the back seat, both wearing their seatbelts. They are cruising in the middle of France in the middle of nowhere, avoiding any big city. It is a little bit cloudy and it might rain lightly. In this case, being the best case scenario, we can affirm that they still have 1% of chance of dying in an accident.  
+              Using our data analysis, we can draw the perfect portail and setting for Mr Bob and Mrs Alice in order for them to drive safely across France. Mr Bob should be ideally between 20 and 50, and Mrs Alice should be between 30 and 50. Mrs Alice should drive, and Mr Bob should sit in the back seat. Of course, they must both wear their seatbelts. They should be cruising in the middle of France, in the middle of nowhere, avoiding any big city. They should wait to have a perfect weather or at worst a little bit cloudy or rainy.
+In this case, looking at last 10 years accidents data in France, they can expect to minimize their chance of dying in an accident ! 
             </p>
         </div>
       </div>
